@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ket猫</title>
+    <style>
+        .w{
+            width: 400px;
+            height: 600px;
+            margin: auto;
+            margin-top: 100px;
+            border: 1px solid red;
+            position:relative
+        }
+        .tou{
+            width: 200px;
+            height: 150px;
+            margin: auto;
+            margin-top: 100px;
+            border: 3px solid #2691f1;
+            border-bottom: none;
+            border-radius:50%;
+            background: deepskyblue;
+        }
+        .tou1{
+            width: 170px;
+            height: 120px;
+            margin: auto;
+            margin-top: 25px;
+            border: 3px solid #2691f1;
+            border-bottom: none;
+            border-radius:50%;
+            background: #ffffff;
+        }
+        .zy{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 3px solid #2691f1;
+            border-radius:50%;
+            top: 110px;
+            left: 155px;
+            background: #ffffff;
+
+
+        }
+        .yy{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 3px solid #2691f1;
+            border-radius:50%;
+            top: 110px;
+            left: 200px;
+            background: #ffffff;
+
+        }
+        .yz{
+            width: 20px;
+            height: 40px;
+            border-top: 3px solid #2691f1;
+            border-radius:50%;
+            margin:10px;
+            margin-top:20px;
+        }
+        .bizi{
+           width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            border: 2px solid #2691f1;
+            background: red;
+            position: absolute;
+            top:150px;
+            left:183px;
+        }
+        .baidian{
+            width: 10px;
+            height: 10px;
+            border-radius: 50px;
+            background:#fff;
+            position: absolute;
+            top:4px;
+            left:4px;
+        }
+        .shuxian{
+            width: 2px;
+            height:30px;
+            background:#2691f1;
+            position: absolute;
+            top:183px;
+            left:200px;
+        }
+        .wan{
+            width: 100px;
+            height:90px;
+            border-bottom: 2px solid #2691f1;
+            border-radius: 50px;
+            position: absolute;
+            top:123px;
+            left:150px;
+        }
+        .hengxian{
+            width: 2px;
+            height:110px;
+            background:#2691f1;
+            position: absolute;
+            top:140px;
+            left:200px;
+        }
+        .hengxian:nth-of-type(1){
+            transform:rotate(70deg);
+        }
+        .hengxian:nth-of-type(2){
+            transform:rotate(90deg);
+        }
+        .hengxian:nth-of-type(3){
+            transform:rotate(110deg);
+        }
+        .dangban{
+            position: absolute;
+            top:187px;
+            left:185px;
+            width: 30px;
+            height: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+        }
+        .bozi{
+            position: absolute;
+            width: 150px;
+            height: 5px;
+            border: 1px solid #2691f1;
+            background: red;
+            left: 122px;
+            top:230px;
+
+        }
+        .duzi{
+            float: left;
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            border-left: 2px solid #2691f1;
+            border-right: 2px solid #2691f1;
+            background: deepskyblue;
+            left: 132px;
+            top: 237px;
+            border-radius: 30%;
+            border-top-right-radius: 3%;
+            border-top-left-radius: 5%;
+            border-bottom-right-radius: 20%;
+            border-bottom-left-radius: 20%;
+
+        }
+        .baiyuan{
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 50px;
+            border: 2px solid #2691f1;
+            position: absolute;
+            top: -3px;
+            left: 15px;
+        }
+        .jingbi{
+            width: 40px;
+            height: 40px;
+            background: yellow;
+            border-radius: 50px;
+            border: 2px solid #2691f1;
+            position: absolute;
+            top: -5px;
+            left: 30px;
+            z-index:100;
+        }
+        .hengtiao{
+            width: 45px;
+            height: 5px;
+            border-radius: 50%;
+            border: 2px solid #2691f1;
+            position: absolute;
+            background: lemonchiffon;
+            top:8px;
+            left: -4px;
+            z-index:101;
+        }
+        .yuandian{
+            width: 5px;
+            height: 5px;
+            background: #985f0d;
+            border-radius: 50%;
+            border: 2px solid #2691f1;
+            position: absolute;
+            top:20px;
+            left: 16px;
+            z-index:101;
+        }
+        .shugang{
+            width: 2px;
+            height: 13px;
+            background: #2691f1;
+            position: absolute;
+            top:28px;
+            left: 20px;
+            z-index:101;
+        }
+        .banyuan{
+            width: 70px;
+            height: 35px;
+            background: white;
+            border-radius: 50px;
+
+            border-bottom: 35px solid #2691f1;
+
+            position: absolute;
+            top:15px;
+            left: 15px;
+        }
+        .xiaobanyuan{
+            width: 60px;
+            height: 25px;
+            background: white;
+            border-radius: 50px;
+
+            border-bottom: 25px solid #fff;
+
+            position: absolute;
+            top:12px;
+            left: 5px;
+        }
+        .duanxian{
+            width: 70px;
+            height: 5px;
+            background: #2691f1;
+            position: absolute;
+            top:30px;
+            z-index:99;
+        }
+        .zs{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            border: 2px solid #2691f1;
+            border-radius: 50%;
+            top: 270px;
+            left: 100px;
+            background: white;
+        }
+        .ys{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            border: 2px solid #2691f1;
+            border-radius: 50%;
+            top: 270px;
+            left: 250px;
+            background: white;
+        }
+        .zt{
+            width: 70px;
+            height: 40px;
+            position: absolute;
+            border-bottom: 2px solid #2691f1;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 20%;
+            top: 90px;
+            left: -20px;
+        }
+        .yt{
+            width: 70px;
+            height: 40px;
+            position: absolute;
+            border-bottom: 2px solid #2691f1;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 20%;
+            top: 90px;
+            left: 45px;
+        }
+        .zj{
+            width: 80px;
+            height: 40px;
+            position: absolute;
+            border: 2px solid #2691f1;
+            border-radius: 45%;
+            border-bottom-right-radius: 30%;
+            border-top-right-radius: 30%;
+            top: 120px;
+            left: -35px;
+            z-index:-1;
+        }
+        .yj{
+            width: 80px;
+            height: 40px;
+            position: absolute;
+            border: 2px solid #2691f1;
+            border-radius: 45%;
+            border-bottom-left-radius: 30%;
+            border-top-left-radius: 30%;
+            top: 120px;
+            left:47px;
+            z-index:-1;
+        }
+        .ysb{
+             width: 50px;
+             height: 20px;
+             position: absolute;
+             background: deepskyblue;
+             transform:rotate(60deg);
+             left: 240px;
+             top:260px;
+             z-index:-1;
+            border-top-left-radius: 30%;
+            border: 2px solid #2691f1;
+         }
+        .zsb{
+            width:50px;
+            height: 20px;
+            position: absolute;
+            background: deepskyblue;
+            transform:rotate(120deg);
+            border: 2px solid #2691f1;
+            left: 100px;
+            top:260px;
+            z-index:-1;
+            border-bottom-left-radius: 30%;
+        }
+        .heng1{
+            width: 20px;
+            height: 2px;
+            background: #2691f1;
+            position: absolute;
+            left: 55px;
+            top: 110px;
+        }
+        .shu{
+            width: 2px;
+            height: 20px;
+            background: #2691f1;
+            position: absolute;
+            left: 64px;
+            top: 110px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="w">
+        <div class="zsb"></div>
+        <div class="ysb"></div>
+        <div class="zs"></div>
+        <div class="ys"></div>
+        <div class="shen">
+            <div class="duzi">
+                <div class="baiyuan">
+                    <div class="banyuan">
+                        <div class="duanxian"></div>
+                        <div class="xiaobanyuan"></div>
+                    </div>
+                    <div class="jingbi">
+                        <div class="hengtiao"></div>
+                        <div class="yuandian"></div>
+                        <div class="shugang"></div>
+                    </div>
+                    <div class="zj"></div>
+                    <div class="yj"></div>
+                    <div class="zt"></div>
+                    <div class="yt"></div>
+
+                </div>
+                <div class="heng1"></div>
+                <div class="shu"></div>
+
+            </div>
+        </div>
+        <div class="tou">
+            <div class="zy">
+                <div class="yz"></div>
+            </div>
+            <div class="yy">
+                <div class="yz"></div>
+            </div>
+            <div class="tou1">
+                <div class="bizi">
+                    <div class="baidian"></div>
+                </div>
+
+                <div class="wan"></div>
+                <div class="heng">
+                    <div class="hengxian"></div>
+                    <div class="hengxian"></div>
+                    <div class="hengxian"></div>
+                    <div class="dangban"></div>
+                </div>
+                <div class="shuxian"></div>
+                <div class="bozi"></div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

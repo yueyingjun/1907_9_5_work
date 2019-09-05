@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.head{
+		width:400px;height:370px;
+		border:1px solid blue;
+		background:linear-gradient(white 20%,#00BFFF 80%);
+		position:relative;
+		margin:auto;
+		border-radius:50%;	
+	}
+	.eye1{
+		width:80px;height:100px;
+		border:1px solid blue;
+		background:white;
+		position:absolute;	
+		float:left;
+		left: 117px;top:50px;
+		border-radius:45%;
+		background:white;
+		z-index:3;
+	}
+	.ball1{
+		width:20px;height:20px;
+		background:black;
+		border-radius:50%;
+		position:relative;
+		left:50px;top:50px;
+	}
+	.ball2{
+		width:20px;height:20px;
+		background:black;
+		border-radius:50%;
+		position:relative;
+		left:10px;top:50px;
+	}
+	.eye2{
+		width:80px;height:100px;
+		border:1px solid blue;
+		background:white;
+		position:absolute;	
+		float:left;
+		left: 200px;top:50px;
+		border-radius:45%;
+		z-index:3;
+	}
+	.face{
+		width:310px;height:280px;
+		border:1px solid blue;
+		background:white;
+		margin:auto;
+		border-radius:50%;
+		position:relative;
+		margin-top:90px;;
+		z-index:0;
+	}
+	.tie{
+		width:40px;height:40px;
+		border:2px solid black;
+		margin:auto;
+		border-radius:50%;
+		margin-top:50px;
+		background:linear-gradient(white 20%,#B22222 80%);
+	}
+	.tie1{
+		width:1px;height:120px;
+		background:black;
+		border:1px solid black;
+		margin:auto;
+		
+	}
+	.beard div:nth-of-type(1){
+		width:60px;height:1px;
+		border:1px solid black;
+		background:black;
+		margin:auto;
+		
+		transform:translate(-100px,-90px);	
+	}
+	.beard div:nth-of-type(2){
+		width:60px;height:1px;
+		border:1px solid black;
+		background:black;
+		transform:rotate(20deg);
+		position:relative;
+		left:25px;top:-113px;
+		
+		
+	}
+	.beard div:nth-of-type(3){
+		width:60px;height:1px;
+		border:1px solid black;
+		background:black;
+		transform:rotate(-20deg);
+		position:relative;
+		left:25px;top:-77px;
+	}
+	.beard div:nth-of-type(4){
+		width:60px;height:1px;
+		border:1px solid black;
+		background:black;
+		margin:auto;
+		transform:translate(100px,-95px);
+	}
+	.beard div:nth-of-type(5){
+		width:60px;height:1px;
+		border:1px solid black;
+		background:black;
+		transform:rotate(-20deg);
+		position:relative;
+		left:222px;top:-117px;
+	}
+	.beard div:nth-of-type(6){
+		width:60px;height:1px;
+		border:1px solid black;
+		background:black;
+		transform:rotate(20deg);
+		position:relative;
+		left:222px;top:-82px;
+	}
+	.mouth{
+		width:180px;height:80px;
+		border-bottom:2px solid black;
+		border-radius:50%;
+		margin:auto;
+		margin-top:-80px;
+	}
+	
+	.body{
+		width:300px;height:250px;
+		border:1px solid blue;
+		background:#00BFFF;
+		margin:auto;
+		transform:translate(0,-30px);
+		position:relation;
+		z-index:2;
+	}
+	.line{
+		width:298px;height:30px;
+		border:2px solid black;
+		background:red;
+		margin:auto;
+		border-radius:30%;
+		position:relative;
+		left:-2px;
+		top:-12px;
+		z-index:4;
+	}
+	.dang{
+		width:50px;height:50px;
+		border:2px solid black;
+		background:yellow;
+		margin:auto;
+		border-radius:50%;
+		transform:translate(0,-23px);
+		position:relative;
+		z-index:5;
+	}
+	.clothes{
+		width:200px;height:200px;
+		border:1px solid black;
+		background:white;
+		border-radius:50%;
+		margin:auto;
+		transform:translate(0,-100px);
+		position:relative;
+	}
+	.pocket1{
+		width:150px;height:1px;
+		border-bottom:1px solid black;
+		margin:auto;
+		margin-top:110px;
+	}
+	.pocket2{
+		width:150px;height:130px;
+		border-bottom:2px solid black;
+		margin:auto;
+		border-radius:50%;
+		margin:auto;
+		margin-top:-70px
+	}
+	.trousers{
+		width:30px;height:30px;
+		background:white;
+		border-top:2px solid black;
+		margin:auto;
+		border-radius:50%;
+		margin-top:-52px;
+	}
+	.leg1{
+		width:160px;height:60px;
+		border:1px solid black;
+		background:white;
+		border-radius:45%;
+		margin:auto;
+		transform:translate(-90px,-40px);
+	}
+	.leg2{
+		width:160px;height:60px;
+		border:1px solid black;
+		background:white;
+		border-radius:45%;
+		margin:auto;
+		transform:translate(90px,-100px);
+		transform-origin:(0,0);
+	}
+	.d1{
+		float:left;
+		width:50px;height:50px;
+		position:relative;
+		background:#00BFFF;
+		top:-380px;
+		z-index:2;
+	}
+	.arm1{
+		width:100px;height:50px;
+		border:1px solid black;
+		background:#00BFFF;
+		transform:rotate(-30deg);
+		margin-left:-80px;
+		margin-top:-370px;
+		position:relative;
+		z-index:1;
+	}
+	.arm11{
+		width:50px;height:50px;
+		border:1px solid black;
+		background:white;
+		
+		border-radius:50%;
+		margin-left:-30px;
+		
+		
+	}
+	.d2{
+		float:right;
+		width:50px;height:50px;
+		position:relative;
+		background:#00BFFF;
+		top:-380px;
+		z-index:2;
+	}
+	.arm2{
+		width:100px;height:50px;
+		border:1px solid black;
+		background:#00BFFF;
+		transform:rotate(30deg);
+		margin-left:280px;
+		margin-top:-52px;
+		position:relative;
+		z-index:1;
+	}
+	.arm12{
+		width:50px;height:50px;
+		border:1px solid black;
+		background:white;
+		
+		border-radius:50%;
+		margin-left:80px;
+		
+	}
+</style>
+</head>
+<body>
+	<div class="head">
+		<div class="eye1">
+			<div class="ball1"></div>
+		</div>
+		<div class="eye2">
+			<div class="ball2"></div>
+		</div>
+		<div class="face">
+			<div class="tie"></div>
+			<div class="tie1"></div>
+			<div class="mouth"></div>
+			<div class="beard">
+				<div class="left1"></div>
+				<div class="left2"></div>
+				<div class="left3"></div>
+				<div class="right1"></div>
+				<div class="right2"></div>
+				<div class="right3"></div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="body">
+		<div class="line"></div>
+		<div class="dang"></div>
+		<div class="clothes">
+			<div class="pocket1"></div>
+			<div class="pocket2"></div>
+		</div>
+		<div class="trousers"></div>
+		<div class="leg1"></div>
+		<div class="leg2"></div>
+		<div class="d1"></div>
+		<div class="arm1">
+			<div class="arm11"></div>
+		</div>
+		<div class="d2"></div>
+		<div class="arm2">
+			<div class="arm12"></div>
+		</div>
+	</div>
+</body>
+</html>

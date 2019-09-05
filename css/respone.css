@@ -1,0 +1,182 @@
+.container{
+    width: 100%;
+    margin: auto;
+}
+.div-s-1{
+    width: 8.333333333%;
+    float: left;
+}
+.div-s-2{
+    width: 16.6666667%;
+    float: left;
+}
+.div-s-3{
+    width:25%;
+    float: left;
+}
+.div-s-4{
+    width: 33.3333333%;
+    float: left;
+}
+.div-s-5{
+    width: 41.6666667%;
+    float: left;
+}
+.div-s-6{
+    width: 50%;
+    float: left;
+}
+.div-s-7{
+    width: 58.33333333%;
+    float: left;
+}
+.div-s-8{
+    width: 66.6666667%;
+    float: left;
+}
+.div-s-9{
+    width: 75%;
+    float: left;
+}
+.div-s-10{
+    width: 83.33333333%;
+    float: left;
+}
+.div-s-11{
+    width: 91.66666667%;
+    float: left;
+}
+.div-s-12{
+    width: 100%;
+    float: left;
+}
+.div-s-none{
+    display: none;
+}
+
+
+@media screen and (min-width:730px){
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+    .div-n-1{
+        width: 8.333333333%;
+        float: left;
+    }
+    .div-n-2{
+        width: 16.6666667%;
+        float: left;
+    }
+    .div-n-3{
+        width:25%;
+        float: left;
+    }
+    .div-n-4{
+        width: 33.3333333%;
+        float: left;
+    }
+    .div-n-5{
+        width: 41.6666667%;
+        float: left;
+    }
+    .div-n-6{
+        width: 50%;
+        float: left;
+    }
+    .div-n-7{
+        width: 58.33333333%;
+        float: left;
+    }
+    .div-n-8{
+        width: 66.6666667%;
+        float: left;
+    }
+    .div-n-9{
+        width: 75%;
+        float: left;
+    }
+    .div-n-10{
+        width: 83.33333333%;
+        float: left;
+    }
+    .div-n-11{
+        width: 91.66666667%;
+        float: left;
+    }
+    .div-n-12{
+        width: 100%;
+        float: left;
+    }
+    .div-s-none{
+        display: block;
+    }
+    .div-n-none{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width:1030px){
+    .container{
+        width: 100%;
+        margin: auto;
+    }
+    .div-m-1{
+        width: 8.333333333%;
+        float: left;
+    }
+    .div-m-2{
+        width: 16.6666667%;
+        float: left;
+    }
+    .div-m-3{
+        width:25%;
+        float: left;
+    }
+    .div-m-4{
+        width: 33.3333333%;
+        float: left;
+    }
+    .div-m-5{
+        width: 41.6666667%;
+        float: left;
+    }
+    .div-m-6{
+        width: 50%;
+        float: left;
+    }
+    .div-m-7{
+        width: 58.33333333%;
+        float: left;
+    }
+    .div-m-8{
+        width: 66.6666667%;
+        float: left;
+    }
+    .div-m-9{
+        width: 75%;
+        float: left;
+    }
+    .div-m-10{
+        width: 83.33333333%;
+        float: left;
+    }
+    .div-m-11{
+        width: 91.66666667%;
+        float: left;
+    }
+    .div-m-12{
+        width: 100%;
+        float: left;
+    }
+    
+    .div-n-none{
+        display: block;
+    }
+    .div-m-none{
+        display: none;
+    }
+    
+}
+

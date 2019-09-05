@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>叮当猫</title>
+    <style>
+        .box{
+            margin: 60px 0 0 750px;
+        }
+            .all{
+                position: relative;
+            }
+                .all .head{
+                    position:relative;
+                    width: 320px;
+                    height: 300px;
+                    height: 300px;
+                    border-radius: 150px;
+                    background: #07bbee;
+                    background:radial-gradient(#07bbee 80% ,#f5f5f5  20%);
+                    border:2px solid #666
+                }
+                .all .face{
+                    position: relative;
+
+                }
+                .all .face .white{
+                    width: 265px;
+                    height: 195px;
+                    border-radius: 150px;
+                    position: absolute;
+                    top: 75px;
+                    left: 25px;
+                    background: #fff;
+                }
+                .all .eyes{
+                    position: relative;
+                    z-index: 1;
+                }
+                .all .eyes .eye{
+                    width:72px;
+                    height:82px;
+                    background:#fff;
+                    border:2px solid #000;
+                    border-radius: 34px;
+                    position:absolute;
+                    top:40px;
+                }
+             .all .eyes .eye .black{
+                width:14px;
+                height:14px;
+                background:#000;
+                border-radius:7px;
+                position:absolute;
+                top:40px;
+            }
+           .all .eyes .eye-left{
+                left:82px;
+            }
+            .all .eyes .eye-right {
+                left: 156px;
+            }
+            .all .eyes .eye .bl {
+                left: 50px;
+            }
+            .all .eyes .eye .br {
+                left: 8px;
+            }
+            .all .face .nose{
+                width:30px;
+                height:30px;
+                border-radius:50%;
+                background:#c93300;
+                border:2px solid #000;
+                position:absolute;
+                top:110px;
+                left:140px;
+            }
+            .all .face .nose-line{
+                width: 3px;
+                height: 110px;
+                background: black;
+                position: absolute;
+                left: 156px;
+                top:142px;
+                z-index:3;
+            }
+            .all .mouse{
+                width: 200px;
+                height: 200px;
+                border-bottom: 3px solid black;
+                border-radius: 100px;
+                position: absolute;
+                left: 60px;
+                top:50px;
+            }
+          .all .huzi{
+            width:220px;
+            height:50px;
+            background:#fff;
+            border-radius:15px;
+            position:absolute;
+            top:145px;
+            left:45px;
+            z-index:2;
+        }
+        .all .huzi .huzis{
+            width: 60px;
+            height: 2px;
+            background: #333;
+            position: absolute;
+            z-index: 2;
+        }
+        .all .huzi .huzi-lt{
+            left: 0;
+            top: 0px;
+            transform: rotate(10deg);
+        }
+        .all .huzi .huzi-lm{
+            left: -2px;
+            top: 20px;
+        }
+        .all .huzi .huzi-lb{
+            left: 0;
+            top: 40px;
+            transform: rotate(-10deg);
+        }
+        .all .huzi .huzi-rt{
+            left: 163px;
+            top: 0px;
+            transform: rotate(-10deg);
+        }
+        .all .huzi .huzi-rm{
+            left: 165px;
+            top: 20px;
+        }
+        .all .huzi .huzi-rb{
+            left: 163px;
+            top: 40px;
+            transform: rotate(10deg);
+        }
+        .all .neck{
+            width: 230px;
+            height: 30px;
+            background: #c93300;
+            position: relative;
+            left: 50px;
+            top:-28px;
+            border-radius: 10px;
+            z-index: 1;
+        }
+        .all .dang{
+           width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: yellow;
+            position: relative;
+            left: 135px;
+            top: -45px;
+            z-index: 2;
+        }
+        .all .bodys{
+            position: relative;
+            top: -310px;
+
+        }
+        .all .bodys .duzi{
+            width: 220px;
+            height: 165px;
+            background: #07beea;
+            border-radius: 20px;
+            border:2px solid #333;
+            position:absolute;
+            top:230px;
+            left:52px;
+        }
+        .all .bodys .dudou{
+            width: 170px;
+            height: 170px;
+            background: #fff;
+            border: 2px solid #000;
+            border-radius: 85px;
+            position: absolute;
+            left: 72px;
+            top: 202px;
+
+        }
+        .all .bodys .pocket{
+            width: 130px;
+            height: 130px;
+            border-radius: 65px;
+            background: #fff;
+            border: 2px solid #000;
+            position:absolute;
+            top: 225px;
+            left: 92px;
+        }
+        .all .bodys .hidden-pocket{
+            width: 134px;
+            height: 60px;
+            background:#fff;
+            border-bottom: 2px solid #000;
+            position:absolute;
+            top: 230px;
+            left: 92px;
+        }
+        .all .hand-l, .all .hand-r{
+            height: 100px;
+            width: 100px;
+
+            border-radius: 50%;
+            position: absolute;
+            top: 295px;
+            left: 248px;
+
+        }
+        .all .hand-l{
+            left: -10px;
+        }
+        .all .arm {
+            width:80px;
+            height:50px;
+            background: #07beea;
+            border: 1px solid #000000;
+            z-index: -1;
+            position: relative;
+
+        }
+        .all .hand-r .arm {
+            top: 10px;
+            transform: rotate(35deg);
+            transform-origin: left;
+        }
+        /*左手手臂*/
+        .all .hand-l .arm {
+            top: 17px;
+            transform-origin: right;
+            transform: rotate(-35deg);
+        }
+        .all .hand{
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            border: 2px solid #000;
+            background: #fff;
+            position: absolute;
+        }
+        .all .hand-l .hand{
+            left: -20px;
+            top: 68px;
+        }
+        .all .hand-r .hand{
+            left: 48px;
+            top: 61px;
+        }
+
+        .all .leg .leg-l, .all .leg .leg-r{
+            width: 80px;
+            height: 20px;
+            position: relative;
+            background: #07bbee;
+            border: 2px solid #07bbee;
+        }
+        .all .leg .leg-l{
+            left: 70px;
+            top: 88px;
+        }
+        .all .leg .leg-r{
+            left: 170px;
+            top: 65px;
+        }
+        .all .foot {
+            width: 280px;
+            height: 40px;
+            position: relative;
+            top: 55px;
+            left: 20px;
+        }
+
+        .all .foot .foot-l, .all .foot .foot-r {
+            width: 125px;
+            height: 30px;
+            background: #fff;
+            border: 2px solid #333;
+            position: relative;
+        }
+
+        .all .foot .foot-l {
+            left: 8px;
+            top: 4px;
+            border-radius: 80px 20px 20px 40px;
+        }
+
+        .all .foot-r {
+            top: -30px;
+            left: 141px;
+            border-radius: 20px 80px 40px 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <div class="all">
+            <div class="head">
+                <div class="eyes">
+                    <div class="eye eye-left">
+                        <div class="black bl"></div>
+                    </div>
+                    <div class="eye eye-right">
+                        <div class="black br"></div>
+                    </div>
+                </div>
+                <div class="face">
+                        <div class="white"></div>
+                        <div class="nose"></div>
+                        <div class="nose-line"></div>
+                        <div class="mouse"></div>
+                        <div class="huzi">
+                            <div class="huzis huzi-lt"></div>
+                            <div class="huzis huzi-lm"></div>
+                            <div class="huzis huzi-lb"></div>
+                            <div class="huzis huzi-rt"></div>
+                            <div class="huzis huzi-rm"></div>
+                            <div class="huzis huzi-rb"></div>
+                        </div>
+                </div>
+            </div>
+             <div class="neck"></div>
+             <div class="dang"></div>
+            <div class="bodys">
+                <div class="duzi"></div>
+                <div class="dudou"></div>
+                <div class="pocket"></div>
+                <div class="hidden-pocket"></div>
+            </div>
+            <div class="hand-r">
+                <div class="arm"></div>
+                <div class="hand"></div>
+            </div>
+            <div class="hand-l">
+                <div class="arm"></div>
+                <div class="hand"></div>
+            </div>
+            <div class="leg">
+                <div class="leg-l"></div>
+                <div class="leg-r"></div>
+            </div>
+            <div class="foot">
+                <div class="foot-l"></div>
+                <div class="foot-r"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tou{
+            width: 410px;
+            height: 410px;
+            border-radius: 50%;
+            background: linear-gradient(#75def9,#077291);
+            margin: auto;
+            border: #000000 solid 2px;
+        }
+        .lian{
+            width: 330px;
+            height: 310px;
+            border-radius: 50%;
+            background: white;
+            float: left;
+            margin: auto;
+            margin-top: 75px;
+            margin-left: 40px;
+            border: #000000 solid 2px;
+            position: relative;
+
+        }
+        .yan{
+            height: 106px;
+            width: 90px;
+            border: #000000 solid 2px;
+            background: white;
+            border-radius: 45%;
+            transform:translate(60px,-1px);
+        }
+        .yanqiu{
+            width: 20px;
+            height: 20px;
+            background: #000000;
+            border-radius: 50%;
+            float: right;
+            margin-top: 50px;
+            margin-right: 10px;
+        }
+        .yan2{
+            height: 106px;
+            width: 90px;
+            border: #000000 solid 2px;
+            background: white;
+            border-radius: 45%;
+            float: right;
+            transform:translate(-70px,-110px);
+
+        }
+        .yanqiu2{
+            width: 20px;
+            height: 20px;
+            background: #000000;
+            border-radius: 50%;
+            float: right;
+            margin-top: 50px;
+            margin-right: 58px;
+        }
+        .bizi{
+            width: 30px;
+            height: 30px;
+            background: darkred;
+            border-radius: 50%;
+            border: #2d2d2d solid 1px;
+            z-index: 10;
+            position: absolute;
+            margin-top: -200px;
+            margin-left: 148px;
+
+        }
+        .bizi2{
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 18px;
+            position: absolute;
+        }
+        .mao{
+            width: 4px;
+            height: 175px;
+            background: #2d2d2d;
+            position: absolute;
+
+            margin-top: -175px;
+            margin-left: 160px;
+
+        }
+        .zui{
+            width: 200px;
+            height: 200px;
+            background: #000;
+            border-radius: 50%;
+            margin-top: -150px;
+            margin-left: 65px;
+
+        }
+        .zui2{
+            width: 210px;
+            height: 210px;
+            background:#ffffff;
+            border-radius: 50%;
+            margin-top: -215px;
+            margin-left: 60px;
+
+        }
+        .dazui{
+            z-index: 5;
+            margin-top: 140px;
+        }
+        .huzi{
+            width: 70px;
+            height: 4px;
+            background: #000;
+            transform:translate(40px,-130px);
+        }.huzi2{
+             width: 70px;
+             height: 4px;
+             background: #000;
+             transform-origin: right center;
+             transform:rotate(15deg);
+                     margin-top: -150px;
+                     margin-left: 37px;
+         }
+        .huzi3{
+            width: 70px;
+            height: 4px;
+            background: #000;
+            transform:rotate(-15deg);
+            transform-origin: right center;
+            margin-top: 30px;
+            margin-left: 37px;
+
+        }
+        .huzi4{
+            width: 70px;
+            height: 4px;
+            background: #000;
+            transform:translate(40px,-130px);
+        }.huzi5{
+             width: 70px;
+             height: 4px;
+             background: #000;
+             transform-origin: right center;
+             transform:rotate(15deg);
+             margin-top: -150px;
+             margin-left: 37px;
+         }
+        .huzi6{
+            width: 70px;
+            height: 4px;
+            background: #000;
+            transform:rotate(-15deg);
+            transform-origin: right center;
+            margin-top: 30px;
+            margin-left: 37px;
+
+        }
+        .huzi7{
+            transform:rotate(180deg);
+            transform-origin: right center;
+            margin-left: 336px;
+            margin-top: -142px;
+        }
+        .bozi{
+            width: 290px;
+            height: 20px;
+            border-radius: 50px;
+            border: #2d2d2d solid 2px;
+            background: darkred;
+            margin: auto;
+            transform:translate(0px,-550px);
+
+        }
+        .lingdang{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: orange;
+            border: #2d2d2d solid 2px;
+            position: relative;
+            margin: auto;
+            transform:translate(0px,-570px);
+        }
+        .xian{
+            width: 4px;
+            height: 30px;
+            background: #000;
+            position: absolute;
+            transform:translate(23px,19px);
+        }
+        .xian2{
+            width: 4px;
+            height: 49px;
+            background: #000;
+            position: absolute;
+            transform:rotate(90deg);
+            margin-left: 23px;
+            margin-top: -8px;
+        }
+        .yuan{
+            width: 15px;
+            height: 15px;
+            background: #000;
+            border-radius: 50%;
+            transform:translate(17px,15px);
+        }
+        .shenti{
+            width: 290px;
+            height: 300px;
+            background: linear-gradient(#75def9,#077291);
+            margin: auto;
+            transform:translate(0px,-240px);
+            z-index: 2;
+
+        }
+        .gebo1{
+            height: 140px;
+            width: 80px;
+            background: linear-gradient(#75def9,#077291);
+            border: 1px solid #2d2d2d;
+            transform-origin:left top;
+            transform: rotate(50deg);
+            margin-left: 610px;
+            z-index: 1;
+        }
+        .gebo2{
+            height: 80px;
+            width: 80px;
+            background: linear-gradient(#75def9,#077291);
+            border: 1px solid #2d2d2d;
+            transform: rotate(-45deg);
+            margin-left: 856px;
+            transform-origin: -100px -17px;
+        }
+        .shou1{
+            width: 110px;
+            height: 110px;
+            background: white;
+            border: #2d2d2d solid 1px;
+            border-radius: 50%;
+            transform:translate(-20px,60px);
+        }
+        .shou2{
+            width: 110px;
+            height: 110px;
+            background: white;
+            border: #2d2d2d solid 1px;
+            border-radius: 50%;
+            transform:translate(-20px,60px);
+        }
+        .duzi{
+            width: 220px;
+            height: 220px;
+            border: #2d2d2d solid 2px;
+            border-radius: 45%;
+            background: white;
+            transform:translate(0px,-10px);
+            margin: auto;
+        }
+        .dou{
+            width: 100px;
+            height: 100px;
+            border-radius: 0 0 50% 50%;
+            background: white;
+            border: #2d2d2d solid 2px;
+            margin: auto;
+            transform:translate(0px,80px);
+        }
+        .jiao{
+            width: 150px;
+            height: 30px;
+            border-radius: 100px 50px 50px 30px;
+            background: white;
+            border: #2d2d2d solid 2px;
+            margin:auto;
+            transform:translate(-100px,-352px);
+        }
+        .jiao2{
+            width: 150px;
+            height: 30px;
+            border-radius: 50px 100px 30px 50px;
+            background: white;
+            border: #2d2d2d solid 2px;
+            margin:auto;
+            transform:translate(100px,-385px);
+        }
+        .dang{
+            width: 30px;
+            height: 30px;
+            border-radius: 50% 50% 0 0;
+            background: white;
+            border: #2d2d2d solid 2px;
+            margin: auto;
+            border-bottom: none;
+            transform:translate(0px,-349px);
+        }
+    </style>
+</head>
+<body>
+<div class="tou">
+    <div class="lian">
+        <div class="yan">
+            <div class="yanqiu">
+
+            </div>
+        </div>
+        <div class="yan2">
+            <div class="yanqiu2">
+
+            </div>
+        </div>
+        <div class="dazui">
+            <div class="zui">
+
+            </div>
+            <div class="zui2">
+
+            </div>
+        </div>
+
+        <div class="bizi">
+            <div class="bizi2">
+
+            </div>
+        </div>
+        <div class="mao">
+
+        </div>
+        <div class="huzi">
+
+        </div>
+        <div class="huzi2">
+
+        </div>
+        <div class="huzi3">
+
+        </div>
+        <div class="huzi7">
+        <div class="huzi4">
+
+        </div>
+        <div class="huzi5">
+
+        </div>
+        <div class="huzi6">
+
+        </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="gebo1">
+    <div class="shou1"></div>
+</div>
+<div class="gebo2">
+    <div class="shou2"></div>
+</div>
+<div class="shenti">
+    <div class="duzi">
+        <div class="dou"></div>
+        <div class="dou2"></div>
+    </div>
+
+</div>
+<div class="bozi">
+
+</div>
+<div class="lingdang">
+    <div class="xian"></div>
+    <div class="xian2"></div>
+    <div class="yuan"></div>
+</div>
+<div class="dang">
+
+</div>
+<div class="jiao"></div>
+<div class="jiao2"></div>
+</body>
+</html>

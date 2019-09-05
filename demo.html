@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>叮当猫</title>
+    <style>
+
+       .all{
+           margin: 50px 0 0 500px;
+           position: relative;
+       }
+       .head {
+           position:relative;
+           width: 320px;
+           height: 300px;
+           border-radius: 150px;
+           background: #07bbee;
+           border:2px solid #555;
+           box-shadow:-5px 10px 15px rgba(0,0,0,0.45);
+        }
+       .face {
+           position: relative;
+           z-index: 2;
+       }
+       .face .white {
+            width: 265px;
+            height: 195px;
+            border-radius: 150px;
+            position: absolute;
+            top: 75px;
+            left: 25px;
+            background: #fff;
+       }
+       .face .nose{
+           width:30px;
+           height:30px;
+           border-radius:15px;
+           background:red;
+           border:2px solid #000;
+           position:absolute;
+           top:110px;
+           left:140px;
+           z-index:3;
+       }
+       .face .nose_line{
+             width:3px;
+             height:100px;
+             background:#333;
+             position:absolute;
+             top:143px;
+             left:155px;
+             z-index:3;
+         }
+       .face .mouth{
+             width:220px;
+             height:400px;
+             border-bottom:3px solid #333;
+             border-radius:120px;
+             position:absolute;
+             top:-160px;
+             left:45px;
+       }
+       .eyes {
+            position: relative;
+            z-index: 3;
+        }
+       .eyes .eye{
+            width:72px;
+            height:82px;
+            background:#fff;
+            border:2px solid #000;
+            border-radius:35px 35px;
+            position:absolute;
+            top:40px;
+        }
+       .eyes .eye .black{
+            width:14px;
+            height:14px;
+            background:#000;
+            border-radius:7px;
+            position:absolute;
+            top:40px;
+        }
+       .eyes .left{
+            left:82px;
+        }
+        .eyes .right {
+            left: 156px;
+        }
+        .eyes .eye .bleft {
+            left: 50px;
+        }
+
+        .eyes .eye .bright {
+            left: 7px;
+        }
+       .whiskers{
+            width:220px;
+            height:80px;
+            background:#fff;
+            border-radius:15px;
+            position:absolute;
+            top:120px;
+            left:45px;
+            z-index:2;
+        }
+        .whiskers .whisker {
+            width: 60px;
+            height: 2px;
+            background: #333;
+            position: absolute;
+            z-index: 2;
+        }
+       .whiskers .rTop {
+            left: 165px;
+            top: 25px;
+        }
+         .whiskers .rMiddle {
+            left: 167px;
+            top: 45px;
+        }
+        .whiskers .rBottom {
+            left: 165px;
+            top: 65px;
+        }
+        /*左上胡子*/
+      .whiskers .lTop {
+            left: 0;
+            top: 25px;
+        }
+        /*左中胡子*/
+     .whiskers .lMiddle {
+            left: -2px;
+            top: 45px;
+        }
+        /*左下胡子*/
+     .whiskers .lBottom {
+            left: 0;
+            top: 65px;
+        }
+        /*围脖*/
+     .choker {
+            width: 230px;
+            height: 20px;
+            background: brown;
+            /*线性渐变 让围巾看上去更自然*/
+            border: 2px solid #000;
+            border-radius: 10px;
+            position: relative;
+            top: -40px;
+            left: 45px;
+            z-index: 4;
+        }
+        /*铃铛*/
+       .choker .bell {
+            width: 40px;
+            height: 40px;
+            _overflow: hidden; /*IE6 hack*/
+            border: 2px solid #000;
+            border-radius: 50px;
+            background: #f9f12a;
+            box-shadow: -5px 5px 10px rgba(0,0,0,0.25);
+            position: absolute;
+            top: 5px;
+            left: 90px;
+        }
+
+
+        /*身子*/
+       .bodys {
+            position: relative;
+            top: -310px;
+        }
+        /*肚子*/
+     .bodys .body {
+            width: 220px;
+            height: 165px;
+            background: #07beea;
+            border:2px solid #333;
+            position:absolute;
+            top:265px;
+            left:50px;
+        }
+        /*白色肚兜*/
+            .bodys .wraps {
+                width: 170px;
+                height: 170px;
+                background: #fff;
+                border: 2px solid #000;
+                border-radius: 85px;
+                position: absolute;
+                left: 72px;
+                top: 230px;
+            }
+            /*口袋*/
+             .bodys .pocket {
+                width: 130px;
+                height: 130px;
+                border-radius: 65px;
+                background: #fff;
+                border: 2px solid #000;
+                position:absolute;
+                top: 250px;
+                left: 92px;
+            }
+            /*挡住口袋一半*/
+            .bodys .pocket_mask {
+                width: 134px;
+                height: 60px;
+                background:#fff;
+                border-bottom: 2px solid #000;
+                position:absolute;
+                top: 259px;
+                left: 92px;
+           }
+            /*左右手*/
+          .hand_right,  .hand_left {
+                height: 100px;
+                width: 100px;
+                position: absolute;
+                top: 272px;
+                left: 248px;
+            }
+            /*左手*/
+       .hand_left {
+                left: -10px;
+            }
+            /*手臂公共部分*/
+         .arm {
+                width:80px;
+                height:50px;
+                background: #07beea;
+                border: 1px solid #000000;
+                box-shadow: -10px 7px 10px rgba(0, 0, 0, 0.35);
+                z-index: -1;
+                position: relative;
+            }
+            /*右手手臂*/
+             .hand_right .arm {
+                top: 17px;
+                -webkit-transform: rotate(35deg);
+                -moz-transform: rotate(35deg);
+                -ms-transform: rotate(35deg);
+                -o-transform: rotate(35deg);
+                transform: rotate(35deg);
+            }
+            /*左手手臂*/
+             .hand_left .arm {
+                top: 17px;
+                background: #0096be;   /*背光一面使用纯色，使其有立体感*/
+                box-shadow: 5px -7px 10px rgba(0, 0, 0, 0.25);
+                -webkit-transform: rotate(145deg);
+                -moz-transform: rotate(145deg);
+                -ms-transform: rotate(145deg);
+                -o-transform: rotate(145deg);
+                transform: rotate(145deg);
+            }
+            /*圆形手掌公共部分*/
+           .circle {
+                width: 60px;
+                height: 60px;
+                border-radius: 30px;
+                border: 2px solid #000;
+                background: #fff;
+                position: absolute;
+            }
+            /*右手手掌*/
+          .hand_right .circle {
+                left: 40px;
+                top: 32px;
+            }
+            /*左手手掌*/
+            .hand_left .circle {
+                left: -20px;
+                top: 32px;
+            }
+            /*手臂和身体结合处，使用背景遮住边框*/
+         .arm_rewrite {
+                height: 45px;
+                width: 5px;
+                background: #07beea;
+                position: relative;
+            }
+             .hand_right .arm_rewrite {
+                top: -45px;
+                left: 22px;
+            }
+             .hand_left .arm_rewrite {
+                top: -45px;
+                left: 60px;
+                background: #0096be; /*同理，背光一面使用纯色，使其有立体感*/
+            }
+            /*脚部*/
+            .foot {
+                width: 280px;
+                height: 40px;
+                position: relative;
+                top: 55px;
+                left: 20px;
+            }
+            /*左右脚共同样式*/
+             .foot .left,  .foot .right {
+                width: 125px;
+                height: 30px;
+                background: #fff;
+                border: 2px solid #333;
+                border-radius: 80px 60px 60px 40px;
+                box-shadow: -6px 0 10px rgba(0, 0, 0, 0.35);
+                position: relative;
+            }
+             .foot .left {
+                left: 8px;
+                top: 65px;
+            }
+
+             .foot .right {
+                top: 31px;
+                left: 141px;
+            }
+
+
+
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="head">
+            <!--眼睛-->
+            <div class="eyes">
+                <div class="eye left">
+                    <!--眼珠-->
+                    <div class="black bleft"></div>
+                </div>
+                <div class="eye right">
+                    <div class="black bright"></div>
+                </div>
+            </div>
+            <!--脸部-->
+            <div class="face">
+                <!--白色脸底-->
+                <div class="white"></div>
+                <!--鼻子-->
+                <div class="nose"></div>
+                <!--鼻子的竖线-->
+                <div class="nose_line"></div>
+                <!--嘴巴-->
+                <div class="mouth"></div>
+                <!--胡须-->
+                <div class="whiskers">
+                    <div class="whisker rTop r160"></div>
+                    <div class="whisker rMiddle"></div>
+                    <div class="whisker rBottom r20"></div>
+                    <div class="whisker lTop r20"></div>
+                    <div class="whisker lMiddle"></div>
+                    <div class="whisker lBottom r160"></div>
+                </div>
+            </div>
+        </div>
+        <!--脖子和铃铛-->
+        <div class="choker">
+            <!--铃铛-->
+            <div class="bell"></div>
+        </div>
+        <!--身体-->
+        <div class="bodys">
+            <!--肚子-->
+            <div class="body"></div>
+            <!--肚兜-->
+            <div class="wraps"></div>
+            <!--口袋-->
+            <div class="pocket"></div>
+            <!--遮住一半口袋，使其呈现半圆-->
+            <div class="pocket_mask"></div>
+        </div>
+        <!--右手-->
+        <div class="hand_right">
+            <!--手臂-->
+            <div class="arm"></div>
+            <!--手掌-->
+            <div class="circle"></div>
+            <!--遮住手臂和身子交接处的线-->
+            <div class="arm_rewrite"></div>
+        </div>
+        <!--左手-->
+        <div class="hand_left">
+            <div class="arm"></div>
+            <div class="circle"></div>
+            <div class="arm_rewrite"></div>
+        </div>
+        <!--脚-->
+        <div class="foot">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+</body>
+</html>

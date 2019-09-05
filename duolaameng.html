@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>哆啦A梦</title>
+    <style>
+        .duola{
+            width: 500px;
+            height: auto;
+            position: relative;
+            margin: 100px auto;
+            /*border: 1px solid red;*/
+        }
+
+        .head {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background:linear-gradient(45deg, #0dacd7 5%,white 90%);
+            border: 2px solid black;
+        }
+
+        .face{
+            width: 300px;
+            height: 230px;
+            background-color: white;
+            border-radius: 130px;
+            position: absolute;
+            top: 158px;
+            left: 40px;
+        }
+
+        .eye {
+            width: 158px;
+            position: absolute;
+            top: 110px;
+            left: 90px;
+        }
+        .eye>div{
+            width: 75px;
+            height: 90px;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 40px;
+            float: left;
+        }
+        .eyein>div{
+            width: 20px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: black;
+            position: relative;
+        }
+        .eyein .one{
+            position: absolute;
+            top: 135px;
+            left: 136px;
+        }
+        .eyein .two{
+            position: absolute;
+            top: 135px;
+            left: 183px;
+        }
+
+        .nose{
+            width: 32px;
+            height: 32px;
+            background-color: maroon;
+            border-radius: 50%;
+            position: absolute;
+            top: 184px;
+            left: 153px;
+        }
+        .nose .one {
+            width: 3px;
+            height: 103px;
+            background-color: black;
+            position: absolute;
+            top: 32px;
+            left: 14px;
+        }
+        .nose .two {
+            width: 160px;
+            height: 100px;
+            border-bottom: 3px solid black;
+            border-radius: 40%;
+            position: absolute;
+            top: 35px;
+            left: -58px;
+        }
+
+        .huzi {
+            position: absolute;
+            top: 220px;
+            left: 54px;
+        }
+        .huzi .huzione{
+            width: 80px;
+            height: 2px;
+            background-color: black;
+            transform: rotate(15deg);
+        }
+
+        .huzi .huzitwo{
+            width: 80px;
+            height: 2px;
+            background-color: black;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .huzi .huzithree{
+            width: 80px;
+            height: 2px;
+            background-color: black;
+            transform: rotate(-15deg);
+        }
+
+        .huzi2 {
+            position: absolute;
+            top: 220px;
+            left: 224px;
+        }
+        .huzi2 .huzione{
+            width: 80px;
+            height: 2px;
+            background-color: black;
+            transform: rotate(165deg);
+        }
+
+        .huzi2 .huzitwo{
+            width: 80px;
+            height: 2px;
+            background-color: black;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .huzi2 .huzithree{
+            width: 80px;
+            height: 2px;
+            background-color: black;
+            transform: rotate(-165deg);
+        }
+
+        .scarf{
+            width: 300px;
+            height: 30px;
+            background-color: maroon;
+            border-radius: 9px;
+            position: absolute;
+            top: 375px;
+            left: 45px;
+        }
+
+        .bell{
+            width: 40px;
+            height: 40px;
+            background-color: goldenrod;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: absolute;
+            left: 180px;
+        }
+        .bell .bellinone{
+            width: 40px;
+            height: 5px;
+            background-color: black;
+            position: absolute;
+            top: 10px;
+        }
+        .bell .bellintwo{
+            width: 15px;
+            height: 15px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 15px;
+            left: 13px;
+        }
+        .bell .bellinthree{
+            width: 5px;
+            height: 20px;
+            background-color: black;
+            position: absolute;
+            top: 20px;
+            left: 18px;
+        }
+    </style>
+</head>
+<body>
+<div class="duola">
+
+    <div class="head"></div>
+
+    <div class="face"></div>
+
+    <div class="eye">
+        <div></div>
+        <div></div>
+    </div>
+    <div class="eyein">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+
+    <div class="nose">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+
+    <div class="huzi">
+        <div class="huzione"></div>
+        <div class="huzitwo"></div>
+        <div class="huzithree"></div>
+    </div>
+    <div class="huzi2">
+        <div class="huzione"></div>
+        <div class="huzitwo"></div>
+        <div class="huzithree"></div>
+    </div>
+
+    <div class="scarf"></div>
+
+    <div class="bell">
+        <div class="bellinone"></div>
+        <div class="bellintwo"></div>
+        <div class="bellinthree"></div>
+    </div>
+</div>
+</body>
+</html>

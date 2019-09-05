@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .all{
+            position: relative;
+
+            width: 1000px; height: 1000px;
+            margin: auto;
+        }
+        .bigface{
+            width: 470px;height: 430px;
+            background: linear-gradient(#75def9 ,#077291);
+            border-radius: 50%;
+            border: 2px solid black;
+
+            margin: auto;
+
+        }
+        .smallface{
+            width: 350px;height: 350px;
+            background: white;
+            border: 2px solid black;
+            border-radius: 50%;
+            transform: translate(60px,80px);
+        }
+        .eyes1{
+            width: 90px; height: 110px;
+            border: 2px solid black;
+            border-radius: 40%;
+            background: white;
+            transform: translate(137px,-300px);
+        }
+        .black1{
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background: black;
+            transform: translate(60px,50px);
+        }
+        .eyes2{
+            width: 90px; height: 110px;
+            border: 2px solid black;
+            border-radius: 40%;
+            background: white;
+            transform: translate(240px,-415px);
+        }
+        .black2{
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            background: black;
+            transform: translate(10px,51px);
+        }
+        .noise{
+            width: 40px;height: 40px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background: darkred;
+            transform: translate(215px,-421px);
+        }
+        .w{
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            background: white;
+            transform: translate(28px,16px);
+            box-shadow:0px -1px 2px white;
+        }
+        .left1{
+            width: 2px;height: 80px;
+            background: black;
+            transform: rotate(120deg);
+            position: absolute;
+            float: left;
+            top: 180px;left: 400px;
+        }
+        .left2{
+            width: 2px;height: 80px;
+            background: black;
+            transform: rotate(90deg);
+            position: absolute;
+            float: left;
+            top: 220px;left: 380px;
+        }
+        .left3{
+            width: 2px;height: 80px;
+            background: black;
+            transform: rotate(60deg);
+            position: absolute;
+            float: left;
+            top: 260px;left: 400px;
+        }
+        .right1{
+            width: 2px;height: 80px;
+            background: black;
+            transform: rotate(240deg);
+            position: absolute;
+            float: left;
+            top: 180px;left: 600px;
+        }
+        .right2{
+            width: 2px;height: 80px;
+            background: black;
+            transform: rotate(90deg);
+            position: absolute;
+            float: left;
+            top: 220px;left: 620px;
+        }
+        .right3{
+            width: 2px;height: 80px;
+            background: black;
+            transform: rotate(-60deg);
+            position: absolute;
+            float: left;
+            top: 260px;left: 600px;
+        }
+        .line{
+           width: 4px;height: 140px;
+            background: black;
+            position: absolute;
+            float: left;
+            top: 204px;left: 500px;
+        }
+        .body1{
+            width: 380px;height: 300px;
+            border: 2px  solid black;
+            margin: auto;
+            background: #077291;
+            transform: translate(0,-20px);
+
+
+
+        }
+        .dz{
+            width: 250px;height: 250px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background: white;
+            transform: translate(70px,-20px);
+
+        }
+        .lingzi{
+            width: 360px;height: 40px;
+            border: 2px solid black;
+            background: darkred;
+            border-radius: 20px;
+            transform: translate(1px,-280px);
+            margin: auto;
+        }
+        .xdz{
+            width: 180px; height: 110px;
+            border-radius: 0 0 50% 50%;
+            border: 2px solid black;
+            background: white;
+            transform: translate(30px,100px);
+        }
+        .ld{
+            width: 70px; height: 70px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background: yellow;
+            transform: translate(155px,-310px);
+
+        }
+        .yuan{
+            width: 25px; height: 25px;
+            border-radius: 50%;
+            background: black;
+            transform: translate(22px,20px);
+        }
+        .heng{
+            width: 68px;height: 3px;
+            background: black;
+            transform: translate(0,-5px);
+        }
+        .shu{
+            width: 3px; height: 28px;
+            background: black;
+            transform: translate(33px,16px);
+        }
+
+
+        .gb1{
+            width: 90px;height: 160px;
+            border-left: 2px solid black;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            background: #077291;
+            transform: rotate(60deg);
+            position: absolute;
+            left: 215px;
+            top: 415px;
+        }
+        .shou1{
+            width: 100px; height: 100px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background: white;
+            transform: translate(119px,-243px);
+        }
+        .gb2{
+            width: 90px;height: 160px;
+            border-left: 2px solid black;
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+            background: #077291;
+            transform: rotate(120deg);
+            position: absolute;
+            left: 690px;
+            top: 415px;
+        }
+        .shou2{
+            width: 100px; height: 100px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background: white;
+            transform: translate(770px,-350px);
+        }
+        .dang{
+            width: 20px;height: 20px;
+            border-radius: 40%;
+            border: 2px solid black;
+            background: white;
+            transform: translate(490px,-245px);
+            border-bottom: white;
+        }
+        .left-j{
+            width: 190px; height: 40px;
+            border: 2px solid black;
+            background: white;
+            border-radius: 50px 40px 40px 20px ;
+            transform: translate(303px,-265px);
+        }
+        .right-j{
+            width: 190px; height: 40px;
+            border: 2px solid black;
+            background: white;
+            border-radius: 50px 40px 40px 20px ;
+            transform: translate(507px,-310px);
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+<div class="all">
+<div class="bigface">
+    <div class="smallface"></div>
+    <div class="eyes1">
+        <div class="black1"></div>
+    </div>
+    <div class="eyes2">
+        <div class="black2"></div>
+    </div>
+    <div class="noise">
+        <div class="w"></div>
+    </div>
+
+    <div class="left1"></div>
+    <div class="left2"></div>
+    <div class="left3"></div>
+    <div class="right1"></div>
+    <div class="right2"></div>
+    <div class="right3"></div>
+    <div class="mouse"></div>
+    <div class="line" ></div>
+</div>
+
+
+<div class="body1">
+    <div class="dz">
+        <div class="xdz"></div>
+    </div>
+    <div class="lingzi"></div>
+    <div class="ld">
+        <div class="yuan"></div>
+        <div class="heng"></div>
+        <div class="shu"></div>
+    </div>
+</div>
+<div class="gb1"></div>
+<div class="shou1"></div>
+<div class="gb2"></div>
+<div class="shou2"></div>
+<div class="dang"></div>
+<div class="left-j"></div>
+<div class="right-j"></div>
+</div>
+
+
+
+
+</body>
+</html>

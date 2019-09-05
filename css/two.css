@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    font-family: "苹方","Microsoft Yahei","黑体",sans-serif!important;
+}
+/*
+.zong{
+    width: 100%;
+    height: 60px;
+}
+.one{
+    width: 1200px;
+    height: 60px;
+    background: #FAFAFA;
+    margin: 0 auto;
+}
+.left{
+    width: 315px;
+    height: 60px;
+    float: left;
+    border-left: 3px solid #2691FD;
+    padding-left:10px;
+    box-sizing: border-box; 
+}
+.title-top{
+    width: 300px;
+    height: 35px;
+    font-size: 34px;
+    height: 35px;
+    float: left;
+    line-height: 35px;
+    font-weight: 400;
+}
+.title-left{
+    width: 67px;
+    height: 16px;
+    float: left;
+    font-size: 20px;
+    font-weight: 600;
+}
+.title-right{
+    width: 140px;
+    height: 16px;
+    color: #2691FD;
+    margin-left: 5px;
+    vertical-align: middle;
+    font-weight: 300;
+}
+.right{
+    float: right;
+    width: 339px;
+    height: 60px;
+    border-right: 3px solid #2691FD;
+   
+}
+.right ul{
+    width: 339px;
+    height: 24px;
+    margin-top:35px;
+
+}
+.right ul li{
+    height: 26px;
+    float: left;
+    margin-right: 5px;
+}
+.right ul li a{
+    height: 100%;
+    width: auto;
+    font-size: 16px;
+    color: #666;
+    text-decoration: none;
+}
+.right ul li a:hover{
+    color: #2691FD;
+    border-top: 3px solid  #2691FD;
+}
+.two{
+    width: 100%;
+    height: 416px;
+}
+.two ul{
+    width: 1140px;
+    height: 250px;
+    margin: 80px auto;
+    
+
+}
+.two ul li{
+    width: 268px;
+    float: left;
+    margin-right: 10px;
+    background: #FAFAFA;
+    
+}
+
+.two ul li  .miaoshu{
+   
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 20px;
+    float: left;
+    margin-top: 20px;
+    background: #999;
+}
+.two ul li  p{
+    width: 200px;
+    height: 20px;
+    margin-top: 20px;
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 10px;
+    float: left;
+}
+.two ul li  .xuexi{
+   
+    width: 248px;
+    height: 100%;
+    float: left;
+    margin-left: 20px;
+    color: #666;
+    font-size: 12px;
+    margin-top: 15px;
+}
+*/
+.one{
+    width: 1200px;
+    height: 60px;
+    margin: auto;
+    border-left: 3px solid red;
+    border-right: 3px solid red;
+    background: #FAFAFA;
+    box-sizing: border-box;
+
+}
+.left{
+    width: 315px;
+    height: 100%;
+    float: left;
+    margin-left: 10px;
+}
+.left .top{
+    width: 300px;height: 40px;
+    font-size: 34px;
+    
+    
+    color: #000;
+}
+.left .buttom{
+    height: 16px;
+    font-size: 20px;
+    color: #000;
+}
+.left .buttom .bu{
+    color: blue;
+}
+.right{
+    width: 340px;
+    height: 100%;
+    float:right;
+    
+    padding-top: 35px;
+    box-sizing: border-box;
+}
+.right a{
+ 
+    text-decoration: none;
+    color: #000;
+}
+.right a:hover{
+    color: blue;
+    border-top: 3px solid blue;
+}
+.right span{
+    margin:0px 3px;
+}
+ul{
+    width: 1112px;
+    height: 270px;
+    
+    margin:50px auto;
+}
+li{
+    width: 268px;
+    height: 257px;
+    float: left;
+  
+    margin-right: 10px;
+    box-sizing: border-box;
+    
+}
+li .top{
+    width: 100%;
+    height: 171px;
+}
+li img{
+    width: 100%;
+    height: 100%;
+}
+ul li .button{
+    width: 100%;
+    height: 86px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+ul li .button .top{
+    width: 100%;
+    height: 20px;
+    
+    margin-top: 20px;
+}
+li .button .top .chu{
+   
+    float: left;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    background: #f0f0f0;
+    line-height: 20px;
+    text-align: center;
+    margin-left:20px;
+ 
+}
+li .button .top p{
+   
+    float: left;
+    width: 200px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    margin-left:10px;
+  
+}
+li .button .xue{
+
+    width: 200px;
+    height: 20px;
+    color: #000;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left:20px; 
+}
+li .bo{
+    background-color: #188EEE;
+    width: 107px;
+    height: 30px;
+    color: #f0f0f0;
+    position: relative;
+    left:160px;
+    top: -115px;
+    text-align: center;
+    line-height: 30px;
+}
+li .bo img{
+    width: 14px;
+    height: 12px;
+    margin-right: 5px;
+}

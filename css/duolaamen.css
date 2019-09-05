@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.zongti{
+    width: 1200px;
+    height: 900px;
+    position: relative;
+    
+}
+
+.tou{
+    width: 500px;
+    height: 450px;
+    border-radius: 50%;
+    border: 2px solid #326777;
+    background: radial-gradient(400px 350px at 250px 250px,#fff 50%,#09B5E5 50%) ;
+    position: absolute;
+    left: 500px;
+    box-shadow: -20px 15px 20px  gray;
+    z-index: 1;
+}
+.yan{
+    
+    width: 100px;
+    height: 120px;
+    border-radius:60px;
+    background: #fff;
+    border: 2px solid #326777;
+    position: absolute;
+    top: 40px;
+    left:130px;
+    
+    
+}
+.yanjing{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    top:50px;
+    left:75px; 
+    transition: all 2s ease-in;
+}
+.yanjing:hover{
+    transform: translate(-70px,0px);
+   
+}
+.yyan{
+    width: 100px;
+    height: 120px;
+    border-radius: 60px;
+    background: #fff;
+    border: 2px solid #326777;
+    position: absolute;
+    top: 40px;
+    left:270px; 
+}
+.yyanjing{
+    transition: all 2s linear;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    top:50px;
+    left:5px; 
+}
+.bizi{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: linear-gradient(200deg,#BE3803,#D03000);
+    position: absolute;
+    top:170px;
+    left: 220px;
+    overflow: hidden;
+}
+.biziyingying{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(#fafafa 40%,rgba(255,255,255,50%));
+    position: absolute;
+    top:8px;
+    left: 38px;
+    
+}
+.huzi{
+    width: 80px;
+    height: 2px;
+    background: gray;
+    position: absolute;
+    top: 260px;
+    left: 70px; 
+    transform-origin: 180px center;
+    transition: all 2s linear;
+   
+}
+
+.tou div:nth-child(5){
+    transform: rotate(30deg);
+}
+
+.tou div:nth-child(6){
+    transform: rotate(150deg);
+}
+
+.tou div:nth-child(7){
+    transform: rotate(180deg);
+}
+.tou div:nth-child(8){
+    transform: rotate(210deg);
+}
+
+.tou div:nth-child(9){
+    transform: rotate(-30deg);
+}
+
+.biliang{
+    width: 5px;
+    height: 170px;
+    background: gray;
+    position: absolute;
+    top:224px;
+    left: 245px;
+}
+
+.zui{
+    width:230px;
+    height:119px;
+    border-radius: 50%;
+    position: absolute;
+    top:280px;
+    left: 135px;
+    border-bottom: 5px solid gray;
+    box-sizing: border-box;
+    transition: all 2s linear;
+}
+
+
+.weijing{
+    width: 420px;
+    height: 40px;
+    border: 3px solid #000;
+    border-radius: 25px;
+    position: absolute;
+    background: linear-gradient(90deg,#A42200,#A72501,#B83102,#AE2B01);
+    top:415px;
+    left:530px;
+    z-index: 3; 
+}
+.lingdang{
+    width: 70px;
+    height: 70px;
+    border: 3px solid #000;
+    border-radius: 50%; 
+    background: linear-gradient(#EDE81B,#D6CD18,#C1B513);
+    position: absolute;
+    top:425px;
+    left:710px;
+    z-index: 10; 
+    overflow: hidden;
+    box-shadow: -5px 5px 10px 3px gray;
+}
+.lingdang div:nth-child(1){
+    width: 100%;
+    height: 6px;
+    background: #000;
+    position: absolute;
+    top:20px;
+   
+}
+.lingdang div:nth-child(2){
+    width: 25px;
+    height: 25px;
+    background: #000;
+    border-radius: 50%;
+    margin:25px auto 0;  
+}
+.lingdang div:nth-child(3){
+    width: 6px;
+    height: 20px;
+    background: #000;
+    margin: auto; 
+}
+.lingdang div:nth-child(4){
+    position: absolute;
+    top:0px;
+    left: 55px;
+}
+.body{
+    width: 380px;
+    height: 350px;
+    background: linear-gradient(90deg,#009ECB,#0079B8,#06B0E1);
+    border: 3px solid #000;
+    position: absolute;
+    top:455px;
+    left: 550px;
+    z-index: 1;
+}
+.body>div{
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid #000;
+    position: absolute;
+    top: -40px;
+    left:40px;
+}
+.koudai{
+    width: 200px;
+    height: 100px;
+    border: 3px solid #000;
+    margin: 150px auto 0;
+    border-radius: 0 0 200px 200px;
+    background: linear-gradient(210deg,#FFFFFF 80%,#EDEDED 20%);
+}
+.dang{
+    width: 50px;
+    height: 33px;
+    border: 3px solid #000;
+    border-bottom: none; 
+    border-radius: 25px 25px 0 0;
+    position: absolute;
+    top: 775px;
+    left: 715px;
+    background: #fff;
+    z-index: 10;
+}
+.jiao{
+    width: 210px;
+    height: 50px;
+    border: 3px solid #000;
+    border-radius: 50px;
+    position:absolute;
+    top: 810px;
+    left: 520px;
+}
+.zongti>div:nth-child(7){
+   
+    left:750px;
+}
+
+.shou{
+    width: 200px;
+    height: 100px;
+    border: 3px solid #000;
+    background: #0097BE;
+    transform:rotate(-45deg) skew(-45deg);
+    
+    position: absolute;
+    top:520px;
+    left:400px;
+    z-index: 0;
+}
+.yshou{
+    width: 200px;
+    height: 100px;
+    border: 3px solid #000;
+    background: #0097BE;
+    transform:rotate(45deg) skew(45deg);
+    
+    position: absolute;
+    top:520px;
+    left:900px;
+    z-index: 0;
+}
+.quan{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    background: #fff;
+    position: absolute;
+    top:560px;
+    left:340px;
+    z-index: 1;
+}
+#q{
+    left:980px;
+}
+.bai{
+    width: 10px;
+    height: 100px;
+    background: #009BCA;
+    position: absolute;
+    top:461px;
+    left:549px;
+    z-index: 20;
+}
+#bai1{
+    left:933px;
+   
+}

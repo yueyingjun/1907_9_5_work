@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+</head>
+<style>
+    .head{
+        height: 290px;
+        width: 330px;
+        border-radius: 50%;
+        background:  linear-gradient(10deg, #0EABD7 60% ,#ffffff 100%);
+        border: 1px solid #999;
+    }
+    .face{
+        height: 200px;
+        width: 230px;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        background: #ffffff;
+        transform: translate(50px,80px);
+    }
+    .eys1{
+         height: 80px;
+         width: 70px;
+         background: #ffffff;
+         border: 1px solid #000000;
+         border-radius: 40%;
+         transform: translate(90px,-150px);
+        float: left;
+     }
+    .eys2{
+        height: 80px;
+        width: 70px;
+        background: #ffffff;
+        border: 1px solid #000000;
+        border-radius: 40%;
+        transform: translate(100px,-150px);
+        float: left;
+    }
+    .zhu1{
+        height: 15px;
+        width: 15px;
+        background: #000000;
+        transform: translate(53px,40px);
+        border-radius: 50%;
+    }
+    .zhu2{
+        height: 15px;
+        width: 15px;
+        background: #000000;
+        transform: translate(2px,40px);
+        border-radius: 50%;
+
+    }
+    .bizi{
+        height: 25px;
+        width: 25px;
+        background: radial-gradient(at 15px,#ffffff 10% ,red 30%);
+        border-radius: 50%;
+        transform: translate(103px,-255px);
+        border:1px solid #000000;
+    }
+    .shu{
+        height: 100px;
+        width: 2px;
+        background: #000000;
+        transform: translate(116px,-255px);
+    }
+    .hei{
+        height: 150px;
+        width: 200px;
+        border-radius: 50%;
+        background: black;
+        transform: translate(15px,25px);
+
+    }
+    .bai{
+        height: 150px;
+        width: 210px;
+        border-radius: 50%;
+        background: #fff;
+        transform: translate(10px,-128px);
+        z-index: 500;
+
+    }
+    .bozi{
+        height: 30px;
+        width:200px;
+        background: red;
+        border-radius: 20px;
+        transform: translate(65px,-305px);
+        z-index: 1;
+    }
+    .ling{
+        background: gold;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        transform: translate(86px,-3px);
+        z-index: 1;
+    }
+    .aaa{
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        z-index: 1;
+        background: black;
+        transform: translate(12px,8px);
+    }
+    .ahei{
+        height: 2px;
+        width: 20px;
+        background: black;
+        transform: translate(6px,8px);
+    }
+    .aheii{
+        height: 10px;
+        width: 2px;
+        background: black;
+        transform: translate(15px,6px);
+    }
+    .body{
+        height: 290px;
+        width: 250px;
+        background:#0EABD7 ;
+        transform: translate(50px,-3px);
+    }
+    .gebo1{
+        height: 80px;
+        width: 80px;
+        background: #0EABD7;
+
+
+        transform-origin:left top;
+        transform: rotate(50deg);
+    }
+    .gebo2{
+        height: 80px;
+        width: 80px;
+        background: #0EABD7;
+
+        transform-origin:275px 425px;
+        transform: rotate(30deg);
+    }
+    .shou{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background: #ffffff;
+        border: 1px solid #000000;
+        transform: translate(-80px,-118px);
+    }
+    .shou2{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background: #ffffff;
+        border: 1px solid #000000;
+        transform: translate(260px,-208px);
+    }
+    .shenyuan{
+        height: 200px;
+        width: 200px;
+        background: #ffffff;
+        border-radius: 50%;
+        border: 2px solid #2d2d2d;
+        transform: translate(20px,-338px);
+    }
+    .kou{
+        height: 80px;
+        width: 100px;
+        border: 2px solid #2d2d2d;
+        border-radius: 0 0 100px 100px;
+        transform: translate(45px,80px);
+    }
+    .tui1{
+        height: 50px;
+        width: 130px;
+        background: #ffffff;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        transform: translate(-34px,250px);
+    }
+    .tui2{
+        height: 50px;
+        width: 130px;
+        background: #ffffff;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        transform: translate(123px,198px);
+    }
+    .dang{
+        height: 25px;
+        width: 25px;
+        background: #ffffff;
+        border: 1px solid #000000;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 40%;
+        transform: translate(98px,155px);
+    }
+    .huzi1{
+        width: 70px;
+        height: 4px;
+        background: #000;
+        transform:translate(40px,-130px);
+    }.huzi2{
+         width: 70px;
+         height: 4px;
+         background: #000;
+         transform-origin: right center;
+         transform:rotate(15deg);
+         margin-top: -150px;
+         margin-left: 37px;
+     }
+    .huzi3{
+        width: 70px;
+        height: 4px;
+        background: #000;
+        transform:rotate(-15deg);
+        transform-origin: right center;
+        margin-top: 30px;
+        margin-left: 37px;
+
+    }
+    .huzi4{
+        width: 70px;
+        height: 4px;
+        background: #000;
+        transform:translate(40px,-130px);
+    }.huzi5{
+         width: 70px;
+         height: 4px;
+         background: #000;
+         transform-origin: right center;
+         transform:rotate(15deg);
+         margin-top: -150px;
+         margin-left: 37px;
+     }
+    .huzi6{
+        width: 70px;
+        height: 4px;
+        background: #000;
+        transform:rotate(-15deg);
+        transform-origin: right center;
+        margin-top: 30px;
+        margin-left: 37px;
+
+    }
+    .huzi7{
+        transform:rotate(180deg);
+        transform-origin: right center;
+        margin-left: 336px;
+        margin-top: -142px;
+    }
+    .hu{
+        transform: translate(0,125px);
+    }
+</style>
+<body>
+    <div >
+        <div class="head" style="z-index: 3">
+            <div class="face">
+                <div class="hei"></div>
+                <div class="bai"></div>
+                <div class="bizi"></div>
+                <div class="shu"></div>
+            </div>
+            <div class="eys1">
+                <div class="zhu1"></div>
+            </div>
+            <div class="eys2">
+                <div class="zhu2"></div>
+            </div>
+            <div class="hu">
+                <div class="huzi1"></div>
+                <div class="huzi2"></div>
+                <div class="huzi3"></div>
+                <div class="huzi7">
+                    <div class="huzi4"></div>
+                    <div class="huzi5"></div>
+                    <div class="huzi6"></div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+
+        <div class="body">
+            <div class="gebo1"></div>
+            <div class="gebo2"></div>
+            <div class="shou"></div>  <div class="shou2"></div>
+            <div class="shenyuan">
+                <div class="kou"></div>
+            </div>
+
+        </div>
+    <div class="bozi">
+        <div class="ling">
+            <div class="ahei">
+
+            </div>
+            <div class="aaa"></div>
+            <div class="aheii"></div>
+        </div>
+        <div class="tui1"></div>
+        <div class="tui2"></div>
+        <div class="dang"></div>
+    </div>
+</body>
+</html>

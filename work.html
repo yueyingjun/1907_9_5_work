@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="image/bootstrap.min.css">
+    <style>
+        body{
+            padding: 0;margin: 0;
+        }
+        .box{
+            margin: auto;
+            height: 400px;width: 400px;
+            position: relative;
+        }
+        .head{
+            width: 200px;height: 200px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background: linear-gradient(to bottom left ,#42b3ff 10%, #2798ff 80%, #1b79ff 10%);
+            position: relative;
+        }
+        .face{
+            width: 170px;height: 130px;
+            border: 1px solid black;
+            border-radius: 50%;
+            position:absolute;
+            left: 15px;bottom: 10px;
+            background-color: white;
+        }
+        .bozi{
+            width: 135px;height: 20px;
+            border: 1px solid black;
+            background-color: #c51c58;
+            border-radius: 10px;
+            position: absolute;
+            top: 180px;left: 30px;
+            z-index: 3;
+        }
+        .eye1 {
+            height: 60px;
+            width: 50px;
+            border: 1px solid black;
+            border-radius: 25px;
+            position: absolute;
+            left: 50px;
+            top: 40px;
+            background-color: white;
+        }
+
+        .eye2{
+            height: 60px;width: 50px;
+            border: 1px solid black;
+            border-radius: 25px;
+            position: absolute;
+            left: 100px;top: 40px;
+            background-color: white;
+        }
+        .nose{
+            width: 30px;height: 30px;
+            border-radius: 50%;
+            background-color: #c50a3c;
+            position: absolute;
+            left: 85px;
+            top: 90px;
+        }
+        .mouth{
+            width: 100px;height: 60px;
+            border-bottom: 2px solid black;
+            border-radius: 50%;
+            position: absolute;
+            left: 50px;top:110px
+        }
+
+        .hand1{
+            position: absolute;
+            top:198px;left: -14px;
+            width: 53px;height: 40px;
+            transform: rotate(160deg);
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .hand2{
+            position: absolute;
+            left:-26px;top:205px;
+            width: 40px;height: 40px;
+            border-radius: 50%;
+            border: 1px solid black;
+            background-color: white;
+        }
+        .hand3{
+            position: absolute;
+            top:195px;left: 155px;
+            width: 53px;height: 40px;
+            transform: rotate(20deg);
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        .hand4{
+            position: absolute;
+            left:186px;top:203px;
+            width: 40px;height: 40px;
+            border-radius: 50%;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        .ling{
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background-color: #ffe181;
+            position: absolute;
+            left: 85px;top:185px;
+            z-index: 4;
+        }
+        .body1{
+            width: 60px;height: 80px;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+            border-radius-bottomright:20px;
+            position: absolute;
+            left: 30px;top:233px;
+        }
+        .body2{
+            width: 20px;height: 20px;
+            position: absolute;
+            left: 90px;top:303px;
+            border-radius: 50%;
+            border-top:1px solid black;
+        }
+        .body3{
+            width: 60px;height: 80px;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            border-radius-bottomright:20px;
+            position: absolute;
+            left: 110px;top:233px;
+
+        }
+        .feet1{
+            width: 80px;height: 20px;
+            border: 1px solid black;
+            position: absolute;
+            border-radius: 10px;
+            left: 15px;top:312px;
+            transform: skew(-30deg,0);
+        }
+        .feet2{
+            width: 80px;height: 20px;
+            border: 1px solid black;
+            position: absolute;
+            border-radius: 10px;
+            left: 110px;top:312px;
+            transform: skew(30deg,0);
+        }
+        .kou1{
+            width: 110px;height: 110px;
+            border: 1px solid black;
+            position: absolute;
+            border-radius: 50%;
+            left: 43px;top:180px;
+        }
+        .kou2{
+            width: 60px;height: 30px;
+            border: 1px solid black;
+            position: absolute;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            left: 70px;top:250px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+<div class="head">
+    <div class="face"></div>
+</div>
+    <div class="bozi"></div>
+    <div class="eye1">
+        <div style="height: 10px;width: 10px;border-radius: 50%;background-color: black;margin-left:30px;margin-top: 25px"></div>
+    </div>
+    <div class="eye2">
+        <div style="height: 10px;width: 10px;border-radius: 50%;background-color: black;margin-left:5px;margin-top: 25px"></div>
+    </div>
+    <div class="nose">
+        <div style="height: 10px;width: 10px;border-radius: 50%;margin-left: 20px;margin-top: 10px;background-color: white"></div>
+    </div>
+    <div style="width: 0;height: 50px;border: 1px solid black;position: absolute;left:100px;top:120px"></div>
+    <div style="width: 30px;height: 0;border-top: 1px solid black;position: absolute;left: 35px;top:120px;transform: rotate(20deg);"></div>
+    <div style="width: 30px;height: 0;border-top: 1px solid black;position: absolute;left: 35px;top:130px;"></div>
+    <div style="width: 30px;height: 0;border-top: 1px solid black;position: absolute;left: 35px;top:140px;transform: rotate(160deg);"></div>
+    <div style="width: 30px;height: 0;border-top: 1px solid black;position: absolute;left: 135px;top:120px;transform: rotate(160deg);"></div>
+    <div style="width: 30px;height: 0;border-top: 1px solid black;position: absolute;left: 135px;top:130px;"></div>
+    <div style="width: 30px;height: 0;border-top: 1px solid black;position: absolute;left: 135px;top:140px;transform: rotate(20deg);"></div>
+    <div class="mouth"></div>
+    <div class="ling">
+        <div style="height: 0;width: 27px;border: 1px solid black;margin-top: 8px"></div>
+        <div style="height: 0;width: 29px;border: 1px solid black;margin-top: 4px"></div>
+        <div style="width: 7px;height: 7px;border-radius: 50px;background-color: black;margin-top: 2px;margin-left: 10px"></div>
+        <div style="width: 0;height: 3px;margin-top: 0px;margin-left: 12px;border: 1px solid black"></div>
+    </div>
+    <div class="hand1"></div>
+    <div class="hand2"></div>
+    <div class="hand3"></div>
+    <div class="hand4"></div>
+    <div class="body1"></div>
+    <div class="body2"></div>
+    <div class="body3"></div>
+    <div class="feet1"></div>
+    <div class="feet2"></div>
+    <div class="kou1"></div>
+    <div class="kou2"></div>
+</div>
+</body>
+</html>

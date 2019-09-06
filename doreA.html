@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .head{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: linear-gradient(-10deg,white,#2691fd,#1269bf,#0c4a88);
+            margin: auto;
+            position: relative;
+            z-index: 1;
+        }
+        .face{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: white;
+            margin: auto;
+            position: absolute;
+            top: 50px;left: 25px;
+
+        }
+        .eyes1{
+            width: 50px;height: 70px;
+            background: white;
+            border-radius: 50%;
+            border: 1px solid black;
+            position: absolute;
+            top: -10px;left: 75px;
+        }
+        .eyes2{
+            width: 50px;height: 70px;
+            background: white;
+            border-radius: 50%;
+            border: 1px solid black;
+            position: absolute;
+            top: -10px;left: 125px;
+        }
+        .point{
+            width: 10px;height: 10px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            top: 40px;left: 20px;
+        }
+        .nose{
+            width: 30px;height: 30px;
+            border-radius: 50%;
+            background: red;
+            position: absolute;
+            top: 60px;left: 110px;
+        }
+        .mousatche{
+            width: 60px;height: 2px;
+            background: black;
+            transform-origin: 125px center;
+            position: absolute;
+            top: 100px;left: 30px;
+
+        }
+        .mousatche:nth-child(5){
+            transform: rotate(-20deg);
+        }
+        .mousatche:nth-child(6){
+            transform: rotate(0deg);
+        }
+        .mousatche:nth-child(7){
+            transform: rotate(20deg);
+        }
+        .mousatche:nth-child(8){
+            transform: rotate(160deg);
+            position: absolute;
+            left: -30px;
+        }
+        .mousatche:nth-child(9){
+            transform: rotate(180deg);
+            position: absolute;
+            left: -30px;
+        }
+        .mousatche:nth-child(10){
+            transform: rotate(200deg);
+            position: absolute;
+            left: -30px;
+        }
+        .a{
+            width: 2px;height: 50px;
+            background: black;
+            position: absolute;
+            top: 70px;left: 125px;
+        }
+        .mouth{
+            width: 120px;height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            top: 90px;left: 67px;
+            border-bottom: 3px solid black;
+        }
+        .necklet{
+            width: 240px;height: 30px;
+            border-radius: 10%;
+            background: red;
+            position: absolute;
+            transform:translate(561px,-60px) ;
+            z-index: 3;
+        }
+        .smallbell{
+            width: 50px;height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(white,rgb(130,80,10));
+            transform:translate(655px,-55px) ;
+            position: absolute;
+            z-index: 4;
+        }
+        .shenti{
+            width: 240px;height: 250px;
+            background: linear-gradient(180deg,white,#2691fd,#1269bf,#0c4a88);
+            transform: translate(562px,-60px);
+            border-radius: 20%;
+            position: absolute;
+            z-index: 2;
+        }
+        .gebo1{
+            width: 80px;height: 50px;
+            background: #2691fd;
+            transform: translate(515px,-10px) rotate(130deg);
+
+
+
+            border-radius: 20%;
+            position: absolute;
+            z-index: 1;
+        }
+        .quantou1{
+            width: 60px;height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(20deg,white,beige,gray);
+            position: absolute;
+            left: 40px;
+
+        }
+        .gebo2{
+            width: 80px;height: 50px;
+            background: #2691fd;
+            transform: translate(770px,-10px) rotate(230deg);
+
+
+
+            border-radius: 20%;
+            position: absolute;
+            z-index: 1;
+        }
+        .quantou2{
+            width: 60px;height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(20deg,white,beige,gray);
+            position: absolute;
+            left: -20px;
+        }
+        .tui1{
+            width: 150px;height: 100px;
+            background: linear-gradient(180deg,white,beige,gray);
+            transform: translate(530px,130px) ;
+
+
+
+            border-radius: 50%;
+            position: absolute;
+            z-index: 5;
+        }
+        .tui2{
+            width: 150px;height: 100px;
+            background: linear-gradient(180deg,white,beige,gray);
+            transform: translate(690px,130px);
+
+
+
+            border-radius: 50%;
+            position: absolute;
+            z-index: 5;
+        }
+        .pocket{
+            width: 180px;height: 200px;
+            border-radius: 0 0 50% 50%;
+            background: white;
+            position: absolute;
+            left: 30px;
+        }
+        .pocket1{
+            width: 120px; height: 80px;
+            border-radius: 0 0 80px 80px;
+            background: linear-gradient(180deg,white,#2691fd,#1269bf,#0c4a88);
+            position: absolute;
+            left: 30px;top: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="face">
+            <div class="eyes1">
+                <div class="point">
+
+                </div>
+            </div>
+            <div class="eyes2">
+                <div class="point">
+
+                </div>
+
+            </div>
+            <div class="a">
+
+            </div>
+            <div class="nose">
+
+            </div >
+
+            <div class="mousatche"></div>
+            <div class="mousatche"></div>
+            <div class="mousatche"></div>
+            <div class="mousatche"></div>
+            <div class="mousatche"></div>
+            <div class="mousatche"></div>
+
+
+
+            <div class="mouth">
+
+            </div>
+        </div>
+    </div>
+<div class="necklet">
+
+
+</div>
+<div class="smallbell">
+
+</div>
+<div class="shenti">
+<div class="pocket">
+    <div class="pocket1"></div>
+
+</div>
+</div>
+    <div class="gebo1">
+    <div class="quantou1"></div>
+    </div>
+    <div class="gebo2">
+    <div class="quantou2"></div>
+    </div>
+
+    <div class="tui1"></div>
+    <div class="tui2"></div>
+</body>
+</html>
